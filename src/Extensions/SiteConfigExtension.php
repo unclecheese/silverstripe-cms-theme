@@ -10,7 +10,7 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\FileHandleField;
 use SilverStripe\Forms\HeaderField;
 use SilverStripe\Forms\TabSet;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Security\Permission;
 use SilverStripe\SiteConfig\SiteConfig;
 
@@ -19,7 +19,7 @@ use SilverStripe\SiteConfig\SiteConfig;
  * @package RyanPotter\SilverStripeCMSTheme\Extensions
  * @property \SilverStripe\SiteConfig\SiteConfig $owner
  */
-class SiteConfigExtension extends DataExtension
+class SiteConfigExtension extends Extension
 {
   /**
    * @config $has_one

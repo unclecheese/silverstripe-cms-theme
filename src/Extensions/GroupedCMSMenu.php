@@ -4,11 +4,11 @@ namespace RyanPotter\SilverstripeCMSTheme\Extensions;
 
 use SilverStripe\Admin\LeftAndMain;
 use SilverStripe\Core\Convert;
-use SilverStripe\ORM\ArrayList;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Model\List\ArrayList;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\FieldType\DBField;
-use SilverStripe\ORM\GroupedList;
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\List\GroupedList;
+use SilverStripe\Model\ArrayData;
 
 /**
  * Class GroupedCmsMenu
@@ -16,7 +16,7 @@ use SilverStripe\View\ArrayData;
  * @package RyanPotter\SilverstripeCMSTheme\Extensions
  * @property \SilverStripe\Admin\LeftAndMain $owner
  */
-class GroupedCmsMenu extends DataExtension
+class GroupedCmsMenu extends Extension
 {
   use ExtensionDefinesDefaultConfig;
 
